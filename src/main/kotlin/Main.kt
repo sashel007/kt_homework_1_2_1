@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     var commissionInRubles = amount * commissionInPercentage
     val minimalComm = 35
     if (commissionInRubles >= minimalComm) {
-        println("Комиссия составляет: $commissionInRubles руб.")
+        println("Комиссия составляет: ${commissionInRubles.toInt()} руб.")
     } else {
         println("Комиссия составляет: $minimalComm рублей")
     }
