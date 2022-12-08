@@ -7,9 +7,10 @@ fun main(args: Array<String>) {
     var amount: Int = scan.nextInt()
     val commissionInPercentage: Double = 0.075
     var commissionInRubles = amount * commissionInPercentage
-    if (commissionInRubles >= 35) {
+    val minimalComm = 35
+    if (commissionInRubles >= minimalComm) {
         println("Комиссия составляет: $commissionInRubles руб.")
     } else {
-        println("Комиссия составляет: 35 рублей")
+        println("Комиссия составляет: $minimalComm рублей")
     }
 }
